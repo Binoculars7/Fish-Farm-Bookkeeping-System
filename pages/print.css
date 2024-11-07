@@ -1,0 +1,26 @@
+.printme, .gotme, #ttoe, #accordionSidebar, #today, #week, #month, #year{
+	visibility: hidden;
+}
+
+#accordionSidebar{
+	display: none;
+}
+.card{
+	margin-left: 0.7em;
+}
+#root{
+	display: none;
+}
+header{
+	display: none;
+}
+footer{
+	display: none;
+}
+#roots{
+	box-shadow: none;
+	text-shadow:none;
+	width: 100%;
+	margin-top: -6.7em;
+	margin-left: -1em;
+}

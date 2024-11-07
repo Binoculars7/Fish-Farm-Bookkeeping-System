@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learn HTML Forms</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-3.7.1.js"></script>
+</head>
+<style type="text/css">
+header{
+	font:bold 30px arial;
+}
+.main_button button{
+	background:black;
+	color:white;
+	width: 100px;
+	height: 30px;
+	border-radius: 20px;
+}
+</style>
+<body id="body">
+
+
+<div class="main">
+	<button class="on">DARK</button>
+	<button class="off">LIGHT</button>
+	<header>
+		My Website
+	</header>
+	<div class="sub_main">We offer the best service</div>
+</div>
+<div class="main_button">
+<button id="submit">Submit</button>
+</div>
+<script type="text/javascript">
+
+
+document.getElementById('body').innerHTML = 'blue';
+
+
+
+//when the document is ready
+$(document).ready(function(){
+	//when dark mode
+	$('.on').click(function(){
+		// change background to black
+		$('body').css('background', 'black');
+		$('header').css('color', 'white');
+		$('.sub_main').css('color', 'white');
+		$('#submit').css('background', 'white');
+		$('#submit').css('color','black');
+	});  
+
+	$('.off').click(function(){
+		// change background to white
+		$('body').css('background', 'white');
+		$('header').css('color', 'black');
+		$('.sub_main').css('color', 'black');
+		$('#submit').css('background', 'black');
+		$('#submit').css('color','white');
+	});  
+});
+</script>
+
+
+
+</body>
+</html>
